@@ -3,10 +3,10 @@ import random
 rows =12
 columns = 12
 
-mount_point = [6, 7, 17, 18, 19, 28, 29, 40, 41, 42, 43, 53, 54, 65, 66, 77, 90]
-
 cell_width, cell_height = 56, 56
 cells = [[None] * columns for _ in range(rows)]
+
+mount_point = [6, 7, 17, 18, 19, 28, 29, 40, 41, 42, 43, 53, 54, 65, 66, 77, 90]
 
 start_node = random.randint(0, rows*columns-1)
 while start_node in mount_point:
